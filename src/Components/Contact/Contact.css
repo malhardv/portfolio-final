@@ -1,5 +1,5 @@
 .contact__container {
-    /* grid-template-columns: repeat(2, max-content); */
+    grid-template-columns: repeat(2, max-content);
     justify-content: center;
     column-gap: 6rem;
     padding-bottom: 3rem;
@@ -148,3 +148,33 @@
 
   }
   
+.response-message {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.response-message.success {
+    color: green;
+}
+
+.response-message.error {
+    color: red;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

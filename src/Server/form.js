@@ -39,10 +39,10 @@ app.post('/contact', async (req, res) => {
     }
 });
 
-app.use(express.static(path.join(__dirname, "dist")))
+app.use(express.static(path.join(__dirname, "../../dist")))
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "dist" + "index.html")
+    res.sendFile(__dirname + "../../dist/index.html")
 })
 
 // Start the server
